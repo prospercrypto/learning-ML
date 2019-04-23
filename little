@@ -1,0 +1,14 @@
+# Load library
+import pandas as pd
+
+# Create URL
+url = 'https://tinyurl.com/titanic-csv'
+
+# Load data
+justina = pd.read_csv(url)
+# Calculate statistics
+print('Maximum:', justina['Age'].max())
+print('Minimum:', justina['Age'].min())
+print('Mean:', justina['Age'].mean())
+print('Sum:', justina['Age'].sum())
+print('Count:', justina['Age'].count())
